@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Righteous', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variable */
+:root{
+    --navbar-height: 43px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Logo and Image  */
+#logo{
+    margin: 5px 32px;
+}
+
+#logo img{
+    height: 48px;
+    width: 48px;
+    margin: 3px 5px;
+    
+}
+/* List Styling */
+
+#navbar::before{
+    content: "";
+    background-color: rgb(8, 5, 71);
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(10, 13, 119);
+    background-color: rgb(187, 186, 186);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Home Section  */
+#home{
+    display: flex ;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 455px;
+}
+
+#home::before{
+    content: "";
+    background:url('../r-a-mukerjea-RVVRYVxkKrQ-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: rgb(12, 19, 92);
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+}
+#home p{
+    color: rgb(250, 249, 249);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Service */
+section.services{
+    background-color: rgb(12, 19, 92);
+    position: relative;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    height: 100%;
+}
+.box{
+    padding: 34px;
+    margin: 4px 10px 70px 10px;
+    border-radius: 26px;
+    background-color: rgb(203, 203, 226);
+}
+.box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.services h1{
+    color: white;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    padding: 70px 0px 30px;
+}
+
+/* client section */
+#client{
+    height: 35rem;
+    margin: -34px 0px
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background: url('../alex-suprun-A53o1drQS2k-unsplash.jpg')   no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#client h1{
+    font-family:'Zilla Slab',serif;
+    padding: 40px 10px 40px 10px;
+    background-color: black;
+    color: white;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 40px;
+    margin: 60px 60px 0px 60px;
+}
+#clients img{
+    height: 200px;
+}
+
+/* Contact  */
+#contact{
+    position: relative;
+    height: 43rem;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../felix-fuchs-PoPsSRju8Y8-unsplash.jpg') no-repeat center center/cover;
+}
+#contact h1{
+    font-family:'Zilla Slab',serif;
+    padding: 40px 10px 40px 10px;
+    background-color: black;
+    color: white;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-top: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Zilla slab',serif;
+    font-weight: bolder;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box textarea{
+    height: 7rem;
+}
+
+
+footer{
+    background: rgb(12, 19, 92);
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Utility clss */
+.primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    color: rgb(12, 19, 92);
+}
+.btn{
+    color: aliceblue;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:  rgb(12, 19, 92);
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all  ease-in-out .2s;
+}
+.btn:hover{
+    color: aliceblue;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:  rgba(58, 66, 157, 0.948);
+    margin: 18px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
